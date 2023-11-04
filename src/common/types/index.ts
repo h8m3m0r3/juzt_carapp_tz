@@ -1,0 +1,6 @@
+export * from "./CarPostType"
+export * from "./CarInfoType"
+export * from "./hooksTypes"
+export * from "./inputs"
+export * from "./reducer"
+export * from "./formTypes"

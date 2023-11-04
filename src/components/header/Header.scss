@@ -1,0 +1,23 @@
+.main__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212121;
+  height: 50px;
+  padding-inline: 75px;
+  .header__logo {
+    color: #ffffff;
+    font-size: 36px;
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
+  .header__profile {
+    a {
+      color: white;
+      font-family: "Arial";
+      font-size: 15px;
+      text-decoration: none;
+    }
+  }
+}

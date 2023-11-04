@@ -1,0 +1,19 @@
+.share__item {
+  display: flex;
+  justify-content: center;
+  a {
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    color: #1a76cb;
+    text-decoration: none;
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  &:hover {
+    a {
+      color: #ff0707;
+    }
+  }
+}

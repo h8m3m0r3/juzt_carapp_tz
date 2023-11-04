@@ -1,0 +1,92 @@
+.detail__content {
+  flex-direction: column;
+  header {
+    margin: 40px 0 25px 0;
+    font-family: "Arial";
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .detail__about {
+    display: flex;
+    .about__left {
+      display: flex;
+      flex-direction: column;
+      width: 580px;
+      height: auto;
+      margin-right: 20px;
+      .left__img {
+        object-fit: cover;
+        max-width: 580px;
+        max-height: 435px;
+      }
+      .action__items {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    .about__right {
+      width: 366px;
+      margin-bottom: 20px;
+      .right__price {
+        font-family: "Arial";
+        margin-bottom: 20px;
+      }
+      .right__credit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        padding: 10px 20px;
+        background-color: #d6ecff;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease;
+
+        color: #1a76cb;
+        font-family: "Arial";
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: bold;
+        &:hover {
+          background-color: #abd8ff;
+        }
+      }
+      .right__items {
+        margin-bottom: 20px;
+        .right__item {
+          display: flex;
+          font-family: "Arial";
+          line-height: 2;
+          font-size: 16px;
+          .item__category {
+            width: 130px;
+            margin-right: 5px;
+            color: #969595;
+          }
+        }
+      }
+      .right__description {
+        display: flex;
+        font-family: "Arial";
+        line-height: 2;
+        font-size: 16px;
+        span {
+          margin-right: 5px;
+          color: #969595;
+        }
+      }
+      .right__location {
+        display: flex;
+        font-family: "Arial";
+        line-height: 2;
+        font-size: 16px;
+        span {
+          margin-right: 5px;
+          color: #969595;
+        }
+      }
+    }
+  }
+}

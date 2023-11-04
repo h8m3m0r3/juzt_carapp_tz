@@ -1,0 +1,60 @@
+.main__content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  .main__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .card {
+      display: flex;
+      padding: 20px;
+      border-radius: 30px;
+      width: 100%;
+      .card__img {
+        width: 240px;
+        height: 180px;
+        background: #adadad;
+        border-radius: 6px;
+        margin-right: 40px;
+        flex: 1;
+      }
+      .card__info {
+        flex: 0 1 406px;
+        min-width: 264px;
+        flex: 3;
+        .info__main {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 30px;
+
+          font-family: "Arial";
+          font-size: 18px;
+          line-height: 25px;
+          font-weight: normal;
+        }
+        .info__dop {
+          font-size: 15px;
+          font-family: "Arial";
+        }
+      }
+      .card__price {
+        flex: 1;
+        p {
+          font-family: "Arial";
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+      &:hover {
+        background-color: #f0f0f0;
+        .card__info {
+          .info__main {
+            color: #ff0707;
+          }
+        }
+      }
+    }
+  }
+}

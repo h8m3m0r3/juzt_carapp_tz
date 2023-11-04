@@ -1,0 +1,12 @@
+{
+    "color": {
+      "black": "black",
+      "white": "white",
+      "grey": "grey",
+      "blue": "blue",
+      "red": "red",
+      "light__blue": "light__blue",
+      "silver": "silver",
+      "gold": "gold"
+    }
+  }

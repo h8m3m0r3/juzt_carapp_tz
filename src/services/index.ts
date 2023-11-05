@@ -5,13 +5,13 @@ import { CarInfoType, CarPostType } from "../common";
 
 class CarsInfo {
   static async getCars(filter: string | null): Promise<AxiosResponse<CarInfoType[]>> {
-    return api.get(`sbYth6/cars${filter ? "/?" + filter : ""}`);
+    return api.get(`7Fn0XW/data${filter ? "/?" + filter : ""}`);
   }
   static async getCarInfo(id: string): Promise<AxiosResponse<CarInfoType>> {
-    return api.get(`sbYth6/cars/${id}`);
+    return api.get(`7Fn0XW/data/${id}`);
   }
   static async postCar(data: CarPostType) {
-    return api.post("sbYth6/cars", data)
+    return api.post("7Fn0XW/data", data)
   }
 }
 export { CarsInfo };

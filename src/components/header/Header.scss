@@ -3,11 +3,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #212121;
+  background-color: var(--black-lighter);
   height: 50px;
   padding-inline: 75px;
   .header__logo {
-    color: #ffffff;
+    color: var(--white-default);
     font-size: 36px;
     font-family: "Montserrat";
     font-weight: 700;

@@ -9,7 +9,7 @@
     max-width: 350px;
     max-height: 460px;
     padding: 20px 16px;
-    background-color: #fafafa;
+    background-color: var(--white-bg);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     header {
       width: 100%;
@@ -17,7 +17,7 @@
       justify-content: center;
       margin-bottom: 15px;
       font-family: "Arial";
-      color: #adadad;
+      color: var(--grey-lighter);
     }
     p {
       font-family: "Arial";
@@ -43,11 +43,11 @@
       font-weight: 400;
       color: white;
       border: 1px solid #2c7dd2;
-      background: linear-gradient(to bottom, #3498db, #3195d8);
+      background: var(--blue-button-bg);
       box-shadow: 0; /* Создание внутренних теней */
       transition: box-shadow 0.1s;
       &:hover {
-        background: linear-gradient(to bottom, #3498db, #2a7fb8);
+        background: var(--blue-button-bg-hover);
         &:active {
           transform: translateY(0.5px);
           box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);

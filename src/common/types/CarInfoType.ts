@@ -8,7 +8,7 @@ type CarInfoType = {
     model: string;
     price: number;
     engine: string;
-    мileage: string;
+    mileage: number;
     PowerReserve: string;
     transmission: string;
     desc: string;

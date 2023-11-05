@@ -22,7 +22,7 @@ const MainContent = () => {
   } = useCarsShare();
   return (
     <div className="main__content container">
-      <h1>CarSell - Продажа автомобилей</h1>
+      <h1 className="content__header">CarSell - Продажа автомобилей</h1>
       <ContentForm
         setFilterParams={setFilterParams}
         setPage={setPage}
@@ -30,7 +30,7 @@ const MainContent = () => {
       />
       <div className="main__sort">
         <select onChange={handleChangeSort} value={sort}>
-          <option value="newest">По новизне</option>
+          <option value="newest">Сортировка</option>
           <option value="priceToLow">По цене: По уменьшению</option>
           <option value="priceToMax">По цене: По возрастанию</option>
           <option value="yearToLow">По году: Младше</option>

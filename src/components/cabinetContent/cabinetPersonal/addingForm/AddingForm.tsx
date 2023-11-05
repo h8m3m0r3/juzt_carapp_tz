@@ -5,7 +5,6 @@ import { CarPostType } from "/@/common";
 import { CarsInfo } from "/@/services";
 import { useModalCreate } from "/@/hooks";
 
-import arrow from "/@/assets/arrowDown.svg";
 import "./AddingForm.scss";
 import {
   InputImage,
@@ -24,6 +23,7 @@ import {
 } from "./addingInputs";
 
 const AddingForm = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
   const {
     register,
     handleSubmit,
@@ -33,19 +33,19 @@ const AddingForm = () => {
     formState: { errors },
   } = useForm<CarPostType>({
     defaultValues: {
-      image: "",
-      brand: "",
-      model: "",
-      color: "",
-      price: null,
-      drive: "",
-      year: null,
-      mileage: "",
-      engine: "",
-      transmission: "",
-      PowerReserve: null,
       city: "",
       desc: "",
+      year: null,
+      brand: "",
+      color: "",
+      drive: "",
+      image: "",
+      model: "",
+      price: null,
+      engine: "",
+      mileage: null,
+      PowerReserve: null,
+      transmission: "",
     },
   });
 
@@ -71,11 +71,18 @@ const AddingForm = () => {
     postCar(data);
     reset();
   };
-
+  const handleOpenForm = () => {
+    setIsFormOpen(!isFormOpen);
+  };
   return (
     <div className="cabinet__adding">
-      <button className="adding__button">Добавить новое объявление</button>
-      <form className="adding__form" onSubmit={handleSubmit(onSubmit)}>
+      <button className="adding__button" onClick={handleOpenForm}>{`${
+        isFormOpen ? "Закрыть форму" : "Добавить новое объявление"
+      }`}</button>
+      <form
+        className={`adding__form ${isFormOpen ? "open" : ""}`}
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <InputImage register={register} errors={errors} />
         <InputBrand register={register} errors={errors} />
         <InputModel register={register} errors={errors} />

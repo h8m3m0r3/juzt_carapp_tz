@@ -6,7 +6,7 @@ type CarPostType = {
   price: null | number;
   drive: string;
   year: null | number;
-  mileage: string;
+  mileage: null | number;
   engine: string;
   transmission: string;
   PowerReserve: null | number;

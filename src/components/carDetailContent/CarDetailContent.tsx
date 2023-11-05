@@ -21,7 +21,10 @@ const CarDetailContent = () => {
       }
     } catch (error) {
     } finally {
-      setLoading(false);
+      setTimeout(()=> {
+        setLoading(false);
+      }, 500)
+      
     }
   }
   useEffect(() => {
@@ -81,7 +84,7 @@ const CarDetailContent = () => {
                 </div>
                 <div className="right__item">
                   <div className="item__category">Пробег</div>
-                  {info?.мileage ? info.мileage : "Не указан"} км
+                  {info?.mileage ? `${info.mileage} км` : "Не указан"}
                 </div>
               </div>
               <div className="right__description">

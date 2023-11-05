@@ -29,6 +29,7 @@ const accountInfoSlice = createSlice({
     },
     setUserInfo: (state, action: PayloadAction<UserMockTypes>) => {
       state.user = action.payload;
+      
     },
   },
 });

@@ -24,7 +24,7 @@
       align-items: center;
       width: 100%;
       max-height: 300px;
-      box-shadow: #000000;
+      box-shadow: var(--black-default);
       background-color: var(--white-default);
       transition: background-color 0.3s ease;
 
@@ -39,7 +39,7 @@
         margin: 5px 14px 5px 5px;
       }
       &:hover {
-        background-color: #f0f0f0;
+        background-color: var(--white-darker);
       }
     }
     .modal__item {
@@ -51,7 +51,7 @@
       line-height: 30px;
       font-size: 14px;
       &:hover {
-        background-color: #f0f0f0;
+        background-color: var(--white-darker);
       }
     }
   }

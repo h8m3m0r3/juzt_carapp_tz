@@ -83,11 +83,7 @@ const ContentForm = ({
             );
           })}
         </ul>
-        <button
-          className="filter__button"
-          onClick={handleSearch}
-          style={{ cursor: "pointer" }}
-        >
+        <button className="filter__button" onClick={handleSearch}>
           Фильтровать
         </button>
       </div>

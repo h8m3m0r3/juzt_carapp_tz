@@ -21,11 +21,11 @@ function Navigation() {
       dispatch(setUserInfo(validToken[0]));
       setTimeout(() => {
         setLoading(false);
-      }, 500);
+      }, 1000);
     } else {
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 1000);
     }
   }, []);
 

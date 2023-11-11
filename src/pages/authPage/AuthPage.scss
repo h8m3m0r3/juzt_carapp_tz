@@ -23,7 +23,7 @@
       font-family: "Arial";
       line-height: 24px;
       font-size: 16px;
-      color: #4a4a4a;
+      color: var(--black-lighter);
       margin-bottom: 5px;
     }
     input {
@@ -31,7 +31,7 @@
       height: 38px;
       padding: 8px 12px;
       border-radius: 4px;
-      border: 1px solid #c6c6c6;
+      border: 1px solid var(--grey-lighter);
       margin-bottom: 25px;
     }
     button {
@@ -42,7 +42,7 @@
       font-size: 16px;
       font-weight: 400;
       color: white;
-      border: 1px solid #2c7dd2;
+      border: 1px solid var(--blue-light);
       background: var(--blue-button-bg);
       box-shadow: 0; /* Создание внутренних теней */
       transition: box-shadow 0.1s;

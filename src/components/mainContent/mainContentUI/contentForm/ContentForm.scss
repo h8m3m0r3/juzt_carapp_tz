@@ -80,16 +80,16 @@
           background-color: var(--white-default);
         }
         &.grey {
-          background-color: #9c9999;
+          background-color: var(--grey-lighter);
         }
         &.blue {
-          background-color: #334dff;
+          background-color: var(--blue-dark);
         }
         &.red {
           background-color: var(--red-default);
         }
         &.light__blue {
-          background-color: #36a1ff;
+          background-color: var(--lightblue);
         }
         &.silver {
           background-color: var(--grey-light);

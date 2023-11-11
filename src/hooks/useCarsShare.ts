@@ -53,7 +53,6 @@ const useCarsShare = () => {
       }, 1000);
     }
   }
-
   useEffect(() => {
     getCarsData();
   }, [sortParams, filterParams]);

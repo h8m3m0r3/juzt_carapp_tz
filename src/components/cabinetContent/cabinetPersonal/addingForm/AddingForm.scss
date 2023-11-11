@@ -7,7 +7,7 @@
     font-size: 16px;
     font-weight: 400;
     color: white;
-    border: 1px solid #2c7dd2;
+    border: 1px solid var(--blue-light);
     background: var(--blue-button-bg);
     box-shadow: 0; /* Создание внутренних теней */
     transition: box-shadow 0.1s;
@@ -61,9 +61,9 @@
           transform: rotate(180deg);
         }
         &:disabled {
-          background-color: #f3f2f2;
+          background-color: var(--white-disabled);
           transition: none;
-          border: 1px solid #f3f2f2;
+          border: 1px solid var(--white-disabled);
           cursor: auto;
           &::placeholder {
             color: var(--grey-lighter);
@@ -144,16 +144,16 @@
               background-color: var(--white-default);
             }
             &.grey {
-              background-color: #9c9999;
+              background-color: var(--grey-lighter);
             }
             &.blue {
-              background-color: #334dff;
+              background-color: var(--blue-dark);
             }
             &.red {
               background-color: var(--red-default);
             }
             &.light__blue {
-              background-color: #36a1ff;
+              background-color: var(--lightblue);
             }
             &.silver {
               background-color: var(--grey-light);

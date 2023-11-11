@@ -3,14 +3,19 @@
   --black-lighter: #242424;
   --white-default: #fff;
   --white-darker: #f0f0f0;
-  --white-bg: #f1f1f1;
+  --white-bg: #f6f6f6;
+  --white-disabled: #fbfbfb;
   --grey-light: #c1c1c1;
   --grey-lighter: #adadad;
   --grey-text: #969595;
   --red-default: #ff0000;
-  --red-darker: var(--red-darker);
+  --red-darker: #db001a;
   --blue-light: #2c7dd2;
   --blue-darker: #1a76cb;
+  --blue-dark: #334dff;
+  --lightblue: #36a1ff;
+  --lightblue-sky: #d6ecff;
+  --lightblue-darkestsky: #abd8ff;
   --blue-button-bg: linear-gradient(to bottom, #3498db, #3195d8);
   --blue-button-bg-hover: linear-gradient(to bottom, #3498db, #2a7fb8);
 }

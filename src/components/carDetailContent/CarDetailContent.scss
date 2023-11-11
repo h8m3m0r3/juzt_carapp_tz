@@ -39,7 +39,7 @@
         width: 100%;
         height: 40px;
         padding: 10px 20px;
-        background-color: #d6ecff;
+        background-color: var(--lightblue-sky);
         border-radius: 6px;
         margin-bottom: 20px;
         transition: background-color 0.3s ease;
@@ -50,7 +50,7 @@
         line-height: 20px;
         font-weight: bold;
         &:hover {
-          background-color: #abd8ff;
+          background-color: var(--lightblue-darkestsky);
         }
       }
       .right__items {

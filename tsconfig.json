@@ -9,6 +9,7 @@
     "paths": {
       "/@/*": ["src/*"]
     },
+    "jsx": "react",
 
     /* Bundler mode */
     "moduleResolution": "bundler",

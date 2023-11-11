@@ -1,4 +1,4 @@
-import React from "react";
+;
 
 import { PersonalInfo } from "./personalInfo";
 import { AddingForm } from "./addingForm";

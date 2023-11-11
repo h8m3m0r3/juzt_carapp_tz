@@ -1,4 +1,4 @@
-import React from "react";
+;
 
 import cross from "/@/assets/cross.svg";
 import "./BrandModal.scss";

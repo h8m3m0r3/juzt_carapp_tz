@@ -1,4 +1,4 @@
-import React from "react";
+;
 
 interface IModelInput {
   setIsModelModalOpen: React.Dispatch<React.SetStateAction<boolean>>;

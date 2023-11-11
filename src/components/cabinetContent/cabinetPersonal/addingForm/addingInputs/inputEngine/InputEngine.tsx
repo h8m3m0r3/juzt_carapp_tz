@@ -1,4 +1,4 @@
-import React from "react";
+;
 import { FieldErrors, UseFormRegister, UseFormSetValue } from "react-hook-form";
 
 import arrow from "/@/assets/arrowDown.svg";

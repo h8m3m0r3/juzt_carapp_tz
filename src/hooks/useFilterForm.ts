@@ -12,7 +12,6 @@ const useFilterForm = ({
   setPage,
   setHasMore,
 }: useFilterFormType) => {
-  const [data, setData] = useState<CarInfoType[]>([]);
 
   const [brands, setBrands] = useState<string[]>([]);
   const [isBrandModalOpen, setIsBrandModalOpen] = useState(false);
@@ -30,12 +29,11 @@ const useFilterForm = ({
 
   async function getCarsData() {
     const res = await CarsInfo.getCars(null);
-    setData(res.data);
-    const brandsSet: Set<string> = new Set(res.data.map((item) => item.brand));
+    const brandsSet: Set<string> = new Set(res.data.map((item: CarInfoType) => item.brand));
     setBrands([...brandsSet]);
     setFilteredBrands([...brandsSet]);
     const brandModelsMap: brandModelsMapType = {};
-    res.data.forEach((item) => {
+    res.data.forEach((item: CarInfoType) => {
       const { brand, model } = item;
       if (!brandModelsMap[brand]) {
         brandModelsMap[brand] = [];

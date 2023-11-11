@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-
 import { Header, MainContent } from "/@/components";
 
 import "./MainPage.scss";

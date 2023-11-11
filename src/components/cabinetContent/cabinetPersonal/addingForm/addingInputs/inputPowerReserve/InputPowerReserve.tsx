@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { CarPostType, InputRegisterType } from "/@/common";
 import { UseFormSetValue, UseFormWatch } from "react-hook-form";
 

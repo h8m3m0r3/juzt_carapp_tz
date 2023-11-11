@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import { Header, CarDetailContent } from "/@/components";
 
 const CarDetailPage = () => {

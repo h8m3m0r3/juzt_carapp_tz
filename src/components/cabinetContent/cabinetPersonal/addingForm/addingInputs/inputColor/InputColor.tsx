@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { CarPostType, InputRegisterType } from "/@/common";
+import { CarPostType } from "/@/common";
 
 import arrow from "/@/assets/arrowDown.svg";
 import {

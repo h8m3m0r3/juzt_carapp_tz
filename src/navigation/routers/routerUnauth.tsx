@@ -1,4 +1,4 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import { MainPage, CarDetailPage, AuthPage } from "/@/pages";
 import { NotFoundComponent } from "../NotFoundComponent";
 
